@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="/.github/logo.png" width="400"/>  
+    <img src="/.github/logo.png" width="350"/>  
     <h1></h1>
     <p>STONE CURRENCY 💵 </p>    
     <hr />    
@@ -70,11 +70,11 @@
 
 #### 1️⃣ Clone este repositório
 
-$ git clone <https://github.com/EliveltonSouzaDev/Drinkse>
+$ git clone <https://github.com/EliveltonSouzaDev/Currency-Converter>
 
 #### 2️⃣ Acesse a pasta do projeto no terminal/cmd
 
-$ cd stoneCurrency
+$ cd Currency-Converter
 
 #### 3️⃣ Abra o editor de texto (VSCode)
 
@@ -106,6 +106,22 @@ $ npm start
 </table>
 
 </br>
+
+<div align="center">
+    <img src="/.github/pagLoader.png/" width="700" /> 
+</div>
+        
+<div align="center">
+    <img src="/.github/pagHome.png/" width="700" /> 
+</div>
+        
+<div align="center">
+    <img src="/.github/pagResult.png/" width="700" /> 
+</div>
+
+<div align="center">
+    <img src="/.github/pagMobile.png/" width="700" /> 
+</div>
 
 <div align="center">
   <h1>Open Source</h1>

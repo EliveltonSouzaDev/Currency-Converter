@@ -113,7 +113,10 @@ const Result = () => {
           {parseFloat(form.inputDolar).toFixed(2).replace(".", ",")}
         </Text>
         <Text fontSize="14px" fontFamily="Roboto" color="#6E7E90">
-          Total em dolar com imposto $ {global.result / global.cotation}
+          Total em dolar com imposto ${" "}
+          {parseFloat(global.result / global.cotation)
+            .toFixed(2)
+            .replace(".", ",")}
         </Text>
         <Text fontSize="14px" fontFamily="Roboto" color="#6E7E90">
           Total em real sem imposto R${" "}
