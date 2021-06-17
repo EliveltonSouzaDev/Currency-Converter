@@ -35,7 +35,7 @@
   
         
 <div align="center">
-    <img src="/.github/pagInicial.png/" width="700" /> 
+    <img src="/.github/pagHome.png/" width="700" /> 
 </div>
 
 ## Possibilidades de um usuário médio na aplicação
@@ -44,8 +44,9 @@
 - [x] Cotação do dia
 - [x] IOF
 - [x] Total dem dólar sem imposto
-- [x] Total em real sem imposto -[x]Total em real com imposto
-
+- [x] Total em real sem imposto 
+- [x] Total em real com imposto
+ 
 ### 🔆 Páginas
 
 - Página inicial
