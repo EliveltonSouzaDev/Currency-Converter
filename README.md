@@ -43,7 +43,7 @@
 - [x] Converter real para dólar
 - [x] Cotação do dia
 - [x] IOF
-- [x] Total dem dólar sem imposto
+- [x] Total dem dólar em imposto
 - [x] Total em real sem imposto 
 - [x] Total em real com imposto
  
