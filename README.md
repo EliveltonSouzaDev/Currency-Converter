@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="/.github/logo.png" width="350"/>  
+    <img src="/.github/logo.png" width="300"/>  
     <h1></h1>
     <p>STONE CURRENCY 💵 </p>    
     <hr />    
