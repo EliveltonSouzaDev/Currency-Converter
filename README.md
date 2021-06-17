@@ -124,7 +124,7 @@ $ npm start
 ### Dispositivos móveis
 
 <div align="center">
-    <img src="/.github/pagMobile.png/" width="700" /> 
+    <img src="/.github/pagMobile.png/" width="600" /> 
 </div>
 
 <div align="center">
