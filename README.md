@@ -108,7 +108,7 @@ $ npm start
 
 </br>
 
-### Aplicação Web
+### Aplicação Web 🌐
 
 <div align="center">
     <img src="/.github/pagLoader.png/" width="700" /> 
@@ -122,7 +122,7 @@ $ npm start
     <img src="/.github/pagResult.png/" width="700" /> 
 </div>
 
-### Dispositivos móveis
+### Dispositivos móveis 📱
 
 <div align="center">
     <img src="/.github/pagMobile.png/" width="600" /> 
