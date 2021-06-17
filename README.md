@@ -119,6 +119,8 @@ $ npm start
     <img src="/.github/pagResult.png/" width="700" /> 
 </div>
 
+### Dispositivos móveis
+
 <div align="center">
     <img src="/.github/pagMobile.png/" width="700" /> 
 </div>
