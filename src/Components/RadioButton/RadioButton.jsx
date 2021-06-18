@@ -62,7 +62,7 @@ const RadioButton = ({ textFirst, textSecond }) => {
           }}
         >
           <Radio
-            color="green"
+            color="var(--green)"
             name="type"
             type="radio"
             id="money"
@@ -82,7 +82,7 @@ const RadioButton = ({ textFirst, textSecond }) => {
           }}
         >
           <Radio
-            color="green"
+            color="var(--green)"
             type="radio"
             name="type"
             id="card"

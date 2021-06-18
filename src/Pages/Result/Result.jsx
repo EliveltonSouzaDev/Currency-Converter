@@ -8,6 +8,7 @@ import { Text, Flex, Box, Button, Heading } from "rebass";
 
 //icons
 import { FiArrowLeft } from "react-icons/fi";
+import { IconContext } from "react-icons";
 
 const Result = () => {
   const global = useContext(GlobalContext);
@@ -22,15 +23,15 @@ const Result = () => {
           my={3}
           p={3}
           width={1 / 8}
-          bg="#ffff"
-          color="grey"
+          bg="var(--white)"
+          color="gray"
           sx={{
             borderRadius: 8,
-            border: "1px solid #D7E0EB",
-            boxShadow: "0px 5px 5px 0px rgba(215, 224, 235, 0.93)",
+            border: "1px solid var(--grayBorder)",
+            boxShadow: "0px 5px 5px 0px var(--grayShadow)",
 
             ":hover": {
-              backgroundColor: "lightgrey",
+              backgroundColor: "lightgray",
               color: "white",
             },
             "@media screen and (max-width: 768px)": {
@@ -41,6 +42,7 @@ const Result = () => {
         >
           <Flex
             justifyContent="space-around"
+            alignItems="center"
             sx={{
               "@media screen and (max-width: 768px)": {
                 flexDirection: "row",
@@ -50,7 +52,9 @@ const Result = () => {
               },
             }}
           >
-            <FiArrowLeft />
+            <IconContext.Provider value={{ size: "1.4rem" }}>
+              <FiArrowLeft />
+            </IconContext.Provider>
             <Text color="black" fontWeight="bold">
               Voltar
             </Text>
@@ -66,7 +70,7 @@ const Result = () => {
         }}
       >
         <Heading
-          color="#45505E"
+          color="var(--gray)"
           fontSize="20px"
           fontFamily="Sharon Sans"
           marginTop="1rem"
@@ -81,7 +85,7 @@ const Result = () => {
         <Heading
           fontSize="64px"
           fontFamily="Sharon Sans"
-          color="#00AB63"
+          color="var(--green)"
           mt={4}
         >
           R$ {parseFloat(global.result).toFixed(2).replace(".", ",")}
@@ -99,28 +103,28 @@ const Result = () => {
         <Text
           fontSize="14px"
           fontFamily="Roboto"
-          color="#6E7E90
+          color="var(--lightgray)
 "
         >
           Cotação do dólar: $1,00 = R${" "}
           {parseFloat(global.cotation).toFixed(2).replace(".", ",")}
         </Text>
 
-        <Text fontSize="14px" fontFamily="Roboto" color="#6E7E90">
+        <Text fontSize="14px" fontFamily="Roboto" color="var(--lightgray)">
           Compra no {form.radioValue} com IOF de {global.taxType}% e taxa do
           estado de {form.inputTax}%
         </Text>
-        <Text fontSize="14px" fontFamily="Roboto" color="#6E7E90">
+        <Text fontSize="14px" fontFamily="Roboto" color="var(--lightgray)">
           Total em dolar sem imposto ${" "}
           {parseFloat(form.inputDolar).toFixed(2).replace(".", ",")}
         </Text>
-        <Text fontSize="14px" fontFamily="Roboto" color="#6E7E90">
+        <Text fontSize="14px" fontFamily="Roboto" color="var(--lightgray)">
           Total em dolar com imposto ${" "}
           {parseFloat(global.result / global.cotation)
             .toFixed(2)
             .replace(".", ",")}
         </Text>
-        <Text fontSize="14px" fontFamily="Roboto" color="#6E7E90">
+        <Text fontSize="14px" fontFamily="Roboto" color="var(--lightgray)">
           Total em real sem imposto R${" "}
           {parseFloat(form.inputDolar * global.cotation)
             .toFixed(2)

@@ -55,10 +55,10 @@ const FormInput = () => {
               height: "46px",
               borderRadius: 4,
               boxSizing: "border-box",
-              border: "1px solid #d7e0eb",
+              border: "1px solid var(--grayBorder)",
               margin: "1rem 0",
               fontSize: "16px",
-              boxShadow: "0px 5px 5px 0px rgba(215, 224, 235, 0.93)",
+              boxShadow: "0px 5px 5px 0px var(--grayShadow)",
               "@media screen and (max-width: 768px)": {
                 width: "100%",
               },
@@ -84,10 +84,10 @@ const FormInput = () => {
               height: "46px",
               borderRadius: 4,
               boxSizing: "border-box",
-              border: "1px solid #d7e0eb",
+              border: "1px solid var(--grayBorder)",
               margin: "1rem 0",
               fontSize: "16px",
-              boxShadow: "0px 5px 5px 0px rgba(215, 224, 235, 0.93)",
+              boxShadow: "0px 5px 5px 0px var(--grayShadow)",
             }}
           ></Input>
         </Box>

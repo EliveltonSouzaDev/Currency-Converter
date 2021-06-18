@@ -34,7 +34,7 @@ const Header = () => {
         }}
       >
         <Heading
-          color="#45505E"
+          color="var(--gray)"
           mb={3}
           sx={{
             "@media screen and (max-width: 768px)": {
@@ -45,7 +45,7 @@ const Header = () => {
         >
           {moment().format("LL  [|]  HH:mm [UTC]")}
         </Heading>
-        <Text color="#8C9CAD">
+        <Text color="var(--lightgray)">
           Dados de câmbio disponibilizados pela Morningstar.
         </Text>
       </Box>

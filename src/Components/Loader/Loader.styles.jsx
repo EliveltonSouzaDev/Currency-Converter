@@ -6,12 +6,12 @@ export const Container = styled.section`
   align-items: center;
   justify-content: center;
   height: 100vh;
-  background-image: linear-gradient(62deg, #ffff 0%, #ffff 100%);
+  background-image: linear-gradient(62deg, var(--white) 0%, var(--white) 100%);
   section {
     width: 70px;
     height: 70px;
     border: 8px solid;
-    border-color: #00ab63 transparent #00ab63 transparent;
+    border-color: var(--green) transparent var(--green) transparent;
     border-radius: 50%;
     animation: spin 1.2s linear infinite;
     margin-right: 7rem;

@@ -3,6 +3,15 @@ import backgroundImg from "../src/Images/Mask.png";
 
 export const GlobalStyle = createGlobalStyle`
 
+:root {
+  --white: #ffff;
+  --lightgray: #6E7E90;
+  --green: #00AB63;
+  --gray: #45505E;
+  --grayBorder:#D7E0EB;
+  --grayShadow:rgba(215, 224, 235, 0.93)
+}
+
 body {
   margin: 0;
   padding: 0;
