@@ -9,9 +9,8 @@ export const GlobalStyle = createGlobalStyle`
   --green: #00AB63;
   --gray: #45505E;
   --grayBorder:#D7E0EB;
-  --grayShadow:rgba(215, 224, 235, 0.93)
+  --grayShadow:rgba(215, 224, 235, 0.93);
 }
-
 
 
 body {
