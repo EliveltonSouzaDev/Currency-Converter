@@ -6,21 +6,25 @@ import { Text, Flex, Button } from "rebass";
 //icons
 import { FaExchangeAlt } from "react-icons/fa";
 import { IconContext } from "react-icons";
+import { FiArrowLeft } from "react-icons/fi";
 
-const StandardButton = ({ clickEvent, text }) => {
+const StandardButton = ({ clickEvent, text, primary }) => {
   return (
     <Button
       my={3}
+      primary={primary}
       p={3}
       width={1 / 8}
-      bg="var(--green)"
+      bg={primary ? "var(--green)" : "var(--white)"}
+      color={primary ? "var(--white)" : "var(--lightgray)"}
       onClick={clickEvent}
-      variant="primary"
       sx={{
         borderRadius: 8,
+        border: "1px solid #D7E0EB",
         boxShadow: "0px 5px 5px 0px var(--grayShadow)",
         ":hover": {
-          backgroundColor: "grey",
+          backgroundColor: primary ? "gray" : "lightgray",
+          color: primary ? "white" : "black",
         },
         "@media screen and (max-width: 768px)": {
           width: "50%",
@@ -30,6 +34,7 @@ const StandardButton = ({ clickEvent, text }) => {
     >
       <Flex
         justifyContent="space-around"
+        alignItems="center"
         sx={{
           "@media screen and (max-width: 768px)": {
             flexDirection: "row",
@@ -39,10 +44,10 @@ const StandardButton = ({ clickEvent, text }) => {
         }}
       >
         {" "}
-        <IconContext.Provider value={{ size: "1.2rem" }}>
-          <FaExchangeAlt />
+        <IconContext.Provider value={{ size: "1.3rem" }}>
+          {primary ? <FaExchangeAlt /> : <FiArrowLeft />}
         </IconContext.Provider>
-        <Text color="white" fontWeight="bold">
+        <Text color={primary ? "white" : "black"} fontWeight="bold">
           {text}
         </Text>
       </Flex>

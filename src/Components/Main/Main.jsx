@@ -60,7 +60,7 @@ const Main = () => {
       )}
       <FormInput />
       <RadioButton textFirst={"Dinheiro"} textSecond={"Cartão"} />
-      <StandardButton clickEvent={handleCalc} text={"Converter"} />
+      <StandardButton clickEvent={handleCalc} text={"Converter"} primary />
     </>
   );
 };

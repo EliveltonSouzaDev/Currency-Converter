@@ -13,6 +13,7 @@ import Elipse from "./Components/Ellipse/Elipse";
 //Pages
 import Home from "./Pages/Home/Home";
 import Result from "./Pages/Result/Result";
+import Error from "./Components/Error/Error";
 
 function App() {
   const [done, setDone] = useState(false);
@@ -35,6 +36,7 @@ function App() {
             <Switch>
               <Home exact path="/" />
               <Result path="/Result" />
+              <Error path="*" />
             </Switch>
           </Router>
         )}

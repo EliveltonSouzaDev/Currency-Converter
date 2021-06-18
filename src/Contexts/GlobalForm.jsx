@@ -6,11 +6,11 @@ export const FormStorage = ({ children }) => {
   const [inputTax, setInputTax] = useState("");
   const [radioValue, setRadioValue] = useState("");
 
-  function clearInput() {
+  const clearInput = () => {
     setInputDolar(0);
     setInputTax(0);
     setRadioValue("");
-  }
+  };
   return (
     <FormContext.Provider
       value={{

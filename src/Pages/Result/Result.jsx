@@ -1,65 +1,30 @@
 import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+
+//context
 import { GlobalContext } from "../../Contexts/GlobalStorage";
 import { FormContext } from "../../Contexts/GlobalForm";
 
 //rebass
-import { Text, Flex, Box, Button, Heading } from "rebass";
+import { Text, Box, Heading } from "rebass";
 
 //icons
-import { FiArrowLeft } from "react-icons/fi";
-import { IconContext } from "react-icons";
+import StandardButton from "../../Components/Button/Button";
 
 const Result = () => {
+  //contextos globais
   const global = useContext(GlobalContext);
   const form = useContext(FormContext);
   const { clearInput } = useContext(GlobalContext);
 
+  const parsingFloat = (item) => {
+    return parseFloat(item).toFixed(2).replace(".", ",");
+  };
+
   return (
     <>
       <Link to="/">
-        <Button
-          onClick={clearInput}
-          my={3}
-          p={3}
-          width={1 / 8}
-          bg="var(--white)"
-          color="gray"
-          sx={{
-            borderRadius: 8,
-            border: "1px solid var(--grayBorder)",
-            boxShadow: "0px 5px 5px 0px var(--grayShadow)",
-
-            ":hover": {
-              backgroundColor: "lightgray",
-              color: "white",
-            },
-            "@media screen and (max-width: 768px)": {
-              width: "40%",
-              marginLeft: "30%",
-            },
-          }}
-        >
-          <Flex
-            justifyContent="space-around"
-            alignItems="center"
-            sx={{
-              "@media screen and (max-width: 768px)": {
-                flexDirection: "row",
-                textAlign: "center",
-                justifyContent: "space-between",
-                alignItems: "space-between",
-              },
-            }}
-          >
-            <IconContext.Provider value={{ size: "1.4rem" }}>
-              <FiArrowLeft />
-            </IconContext.Provider>
-            <Text color="black" fontWeight="bold">
-              Voltar
-            </Text>
-          </Flex>
-        </Button>
+        <StandardButton clickEvent={clearInput} text={"Voltar"} />
       </Link>
       <Box
         sx={{
@@ -88,7 +53,7 @@ const Result = () => {
           color="var(--green)"
           mt={4}
         >
-          R$ {parseFloat(global.result).toFixed(2).replace(".", ",")}
+          R$ {parsingFloat(global.result)}
         </Heading>
       </Box>
       <Box
@@ -106,8 +71,7 @@ const Result = () => {
           color="var(--lightgray)
 "
         >
-          Cotação do dólar: $1,00 = R${" "}
-          {parseFloat(global.cotation).toFixed(2).replace(".", ",")}
+          Cotação do dólar: $1,00 = R$ {parsingFloat(global.cotation)}
         </Text>
 
         <Text fontSize="14px" fontFamily="Roboto" color="var(--lightgray)">
@@ -115,20 +79,15 @@ const Result = () => {
           estado de {form.inputTax}%
         </Text>
         <Text fontSize="14px" fontFamily="Roboto" color="var(--lightgray)">
-          Total em dolar sem imposto ${" "}
-          {parseFloat(form.inputDolar).toFixed(2).replace(".", ",")}
+          Total em dolar sem imposto $ {parsingFloat(form.inputDolar)}
         </Text>
         <Text fontSize="14px" fontFamily="Roboto" color="var(--lightgray)">
           Total em dolar com imposto ${" "}
-          {parseFloat(global.result / global.cotation)
-            .toFixed(2)
-            .replace(".", ",")}
+          {parsingFloat(global.result / global.cotation)}
         </Text>
         <Text fontSize="14px" fontFamily="Roboto" color="var(--lightgray)">
           Total em real sem imposto R${" "}
-          {parseFloat(form.inputDolar * global.cotation)
-            .toFixed(2)
-            .replace(".", ",")}
+          {parsingFloat(form.inputDolar * global.cotation)}
         </Text>
       </Box>
     </>

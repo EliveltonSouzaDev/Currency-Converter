@@ -18,14 +18,11 @@ const RadioButton = ({ textFirst, textSecond }) => {
 
   //verifica qual radio button está ativo e seleciona a taxa correta
   const handleRadioChange = (value) => {
-    if (value === "dinheiro") {
-      global.setTaxType(1.1);
-      form.setRadioValue("dinheiro");
-    } else {
-      global.setTaxType(6.38);
-      form.setRadioValue("cartão");
-    }
+    value === "dinheiro"
+      ? global.setTaxType(1.1) || form.setRadioValue("dinheiro")
+      : global.setTaxType(6.38) || form.setRadioValue("cartão");
   };
+
   return (
     <>
       <Text
