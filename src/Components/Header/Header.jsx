@@ -20,12 +20,13 @@ const Header = () => {
         width="16%"
         sx={{
           "@media screen and (max-width: 768px)": {
-            width: "50%",
+            width: "80%",
+            marginLeft: "10%",
           },
         }}
       ></Image>
       <Box
-        mx={5}
+        mx={4}
         sx={{
           "@media screen and (max-width: 768px)": {
             textAlign: "center",

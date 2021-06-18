@@ -12,6 +12,8 @@ export const GlobalStyle = createGlobalStyle`
   --grayShadow:rgba(215, 224, 235, 0.93)
 }
 
+
+
 body {
   margin: 0;
   padding: 0;

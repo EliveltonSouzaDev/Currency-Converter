@@ -14,6 +14,7 @@ import FormInput from "../FormInput/FormInput.jsx";
 import RadioButton from "../RadioButton/RadioButton.jsx";
 
 const Main = () => {
+  //contextos globais
   const global = useContext(GlobalContext);
   const form = useContext(FormContext);
 
