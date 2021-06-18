@@ -1,5 +1,5 @@
 <div align="center">
-    <img src="/.github/logo.png" width="350"/>  
+    <img src="/.github/logo.png" width="300"/>  
     <h1></h1>
     <p>STONE CURRENCY 💵 </p>    
     <hr />    
@@ -35,7 +35,7 @@
   
         
 <div align="center">
-    <img src="/.github/pagInicial.png/" width="700" /> 
+    <img src="/.github/pagHome.png/" width="700" /> 
 </div>
 
 ## Possibilidades de um usuário médio na aplicação
@@ -43,9 +43,10 @@
 - [x] Converter real para dólar
 - [x] Cotação do dia
 - [x] IOF
-- [x] Total dem dólar sem imposto
-- [x] Total em real sem imposto -[x]Total em real com imposto
-
+- [x] Total dem dólar em imposto
+- [x] Total em real sem imposto 
+- [x] Total em real com imposto
+ 
 ### 🔆 Páginas
 
 - Página inicial
@@ -107,7 +108,7 @@ $ npm start
 
 </br>
 
-### Aplicação Web
+### Aplicação Web 🌐
 
 <div align="center">
     <img src="/.github/pagLoader.png/" width="700" /> 
@@ -121,10 +122,10 @@ $ npm start
     <img src="/.github/pagResult.png/" width="700" /> 
 </div>
 
-### Dispositivos móveis
+### Dispositivos móveis 📱
 
 <div align="center">
-    <img src="/.github/pagMobile.png/" width="700" /> 
+    <img src="/.github/pagMobile.png/" width="600" /> 
 </div>
 
 <div align="center">
