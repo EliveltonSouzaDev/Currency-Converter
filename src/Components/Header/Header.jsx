@@ -7,6 +7,7 @@ import Logo from "../../Images/logoStone.png";
 import moment from "moment";
 import "moment/locale/pt-br";
 
+//rebass
 import { Box, Flex, Heading, Image, Text } from "rebass";
 
 const Header = () => {

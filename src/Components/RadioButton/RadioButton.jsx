@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useRef } from "react";
 
 //context
 import { FormContext } from "../../Contexts/GlobalForm";
@@ -12,19 +12,20 @@ const RadioButton = ({ textFirst, textSecond }) => {
   // contextos globais
   const form = useContext(FormContext);
   const global = useContext(GlobalContext);
+  //pega os dados dos inputs
+  const radioCard = useRef(null);
+  const radioMoney = useRef(null);
 
-  //verifica qual radio button está ativo
-  const handleRadioChange = (e) => {
-    form.setCurrentRadioValue(e.target.value);
-
-    form.currentRadioValue === "cartão"
-      ? global.setTaxType(1.1)
-      : global.setTaxType(6.38);
+  //verifica qual radio button está ativo e seleciona a taxa correta
+  const handleRadioChange = (value) => {
+    if (value === "dinheiro") {
+      global.setTaxType(1.1);
+      form.setRadioValue("dinheiro");
+    } else {
+      global.setTaxType(6.38);
+      form.setRadioValue("cartão");
+    }
   };
-
-  console.log("renderizei");
-  console.log(global.taxType);
-
   return (
     <>
       <Text
@@ -66,12 +67,11 @@ const RadioButton = ({ textFirst, textSecond }) => {
             type="radio"
             id="money"
             value="dinheiro"
-            onChange={handleRadioChange}
-            checked={form.currentRadioValue === "dinheiro"}
+            ref={radioMoney}
+            onClick={() => handleRadioChange(radioMoney.current.value)}
           />
           {textFirst}
         </Label>
-
         <Label
           width={[1 / 2]}
           p={2}
@@ -87,8 +87,8 @@ const RadioButton = ({ textFirst, textSecond }) => {
             name="type"
             id="card"
             value="cartão"
-            onChange={handleRadioChange}
-            checked={form.currentRadioValue === "cartão"}
+            ref={radioCard}
+            onClick={() => handleRadioChange(radioCard.current.value)}
           />
           {textSecond}
         </Label>

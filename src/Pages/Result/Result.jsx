@@ -12,11 +12,13 @@ import { FiArrowLeft } from "react-icons/fi";
 const Result = () => {
   const global = useContext(GlobalContext);
   const form = useContext(FormContext);
+  const { clearInput } = useContext(GlobalContext);
 
   return (
     <>
       <Link to="/">
         <Button
+          onClick={clearInput}
           my={3}
           p={3}
           width={1 / 8}
@@ -105,8 +107,8 @@ const Result = () => {
         </Text>
 
         <Text fontSize="14px" fontFamily="Roboto" color="#6E7E90">
-          Compra no {form.currentRadioValue} com IOF de {global.taxType}% e taxa
-          do estado de {form.inputTax}%
+          Compra no {form.radioValue} com IOF de {global.taxType}% e taxa do
+          estado de {form.inputTax}%
         </Text>
         <Text fontSize="14px" fontFamily="Roboto" color="#6E7E90">
           Total em dolar sem imposto ${" "}

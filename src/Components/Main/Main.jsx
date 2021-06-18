@@ -1,5 +1,7 @@
 import React, { useContext, useState } from "react";
 import { useHistory } from "react-router-dom";
+
+//context
 import { GlobalContext } from "../../Contexts/GlobalStorage";
 import { FormContext } from "../../Contexts/GlobalForm";
 
@@ -21,14 +23,11 @@ const Main = () => {
 
   const handleCalc = () => {
     //verifica se os inputs estão preenchidos, se não manda a mensagem de erro
-    if (
-      (form.inputDolar <= 0) |
-      (form.inputTax <= 0) |
-      !form.currentRadioValue
-    ) {
+    if ((form.inputDolar <= 0) | (form.inputTax <= 0) | !form.radioValue) {
       setError(true);
     } else {
       setError(false);
+      //faz o calculo das taxas em cartão ou dinheiro
       const iofCalc =
         parseFloat((global.cotation * global.taxType) / 100) +
         parseFloat(global.cotation);

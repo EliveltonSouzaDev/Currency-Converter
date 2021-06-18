@@ -4,8 +4,13 @@ export const FormContext = createContext();
 export const FormStorage = ({ children }) => {
   const [inputDolar, setInputDolar] = useState("");
   const [inputTax, setInputTax] = useState("");
-  const [currentRadioValue, setCurrentRadioValue] = useState();
+  const [radioValue, setRadioValue] = useState("");
 
+  function clearInput() {
+    setInputDolar(0);
+    setInputTax(0);
+    setRadioValue("");
+  }
   return (
     <FormContext.Provider
       value={{
@@ -13,8 +18,9 @@ export const FormStorage = ({ children }) => {
         inputDolar,
         inputTax,
         setInputTax,
-        setCurrentRadioValue,
-        currentRadioValue,
+        setRadioValue,
+        radioValue,
+        clearInput,
       }}
     >
       {children}

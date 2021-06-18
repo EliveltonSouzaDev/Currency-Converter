@@ -1,13 +1,16 @@
 import React from "react";
+
+//components
 import { Container } from "./Loader.styles";
+//image
 import Logo from "../../Images/logoStone.png";
 
 const Loader = () => {
   return (
     <Container>
-      <img className="logo" src={Logo} alt="logomarca Drink-se" />
+      <img src={Logo} alt="logomarca Stone currency" />
 
-      <section className="spinner"></section>
+      <section></section>
     </Container>
   );
 };

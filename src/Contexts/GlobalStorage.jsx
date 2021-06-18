@@ -5,7 +5,7 @@ export const GlobalContext = createContext();
 export const GlobalStorage = ({ children }) => {
   const [cotation, setCotation] = useState("");
   const [result, setResult] = useState("");
-  const [taxType, setTaxType] = useState();
+  const [taxType, setTaxType] = useState(0);
 
   useEffect(() => {
     axios

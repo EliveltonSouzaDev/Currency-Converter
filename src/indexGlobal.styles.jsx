@@ -1,5 +1,6 @@
 import styled, { createGlobalStyle } from "styled-components";
 import backgroundImg from "../src/Images/Mask.png";
+
 export const GlobalStyle = createGlobalStyle`
 
 body {
