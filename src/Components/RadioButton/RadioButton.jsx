@@ -43,9 +43,9 @@ const RadioButton = ({ textFirst, textSecond }) => {
         sx={{
           "@media screen and (max-width: 768px)": {
             flexDirection: "row",
-            width: 250,
+            width: "200px",
             justifyContent: "center",
-            margin: "0 20%",
+            margin: "0 auto",
           },
         }}
       >
@@ -54,7 +54,7 @@ const RadioButton = ({ textFirst, textSecond }) => {
           p={2}
           sx={{
             "@media screen and (max-width: 768px)": {
-              width: 120,
+              width: "50%",
             },
           }}
         >
@@ -74,7 +74,7 @@ const RadioButton = ({ textFirst, textSecond }) => {
           p={2}
           sx={{
             "@media screen and (max-width: 768px)": {
-              width: 110,
+              width: "45%",
             },
           }}
         >

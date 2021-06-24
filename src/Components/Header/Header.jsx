@@ -20,8 +20,8 @@ const Header = () => {
         width="16%"
         sx={{
           "@media screen and (max-width: 768px)": {
-            width: "80%",
-            marginLeft: "10%",
+            width: "60%",
+            marginLeft: "4%",
           },
         }}
       ></Image>
