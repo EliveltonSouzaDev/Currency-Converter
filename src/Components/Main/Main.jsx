@@ -50,6 +50,7 @@ const Main = () => {
           fontWeight="bold"
           color="red"
           my="3"
+          mx={5}
           sx={{
             "@media screen and (max-width: 768px)": {
               textAlign: "center",

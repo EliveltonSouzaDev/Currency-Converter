@@ -22,15 +22,16 @@ const Result = () => {
   };
 
   return (
-    <>
+    <div>
       <Link to="/">
         <StandardButton clickEvent={clearInput} text={"Voltar"} />
       </Link>
       <Box
+        mx={5}
         sx={{
           "@media screen and (max-width: 768px)": {
             textAlign: "center",
-            marginTop: "1rem",
+            margin: "1rem auto",
           },
         }}
       >
@@ -58,10 +59,11 @@ const Result = () => {
       </Box>
       <Box
         mt={5}
+        mx={5}
         sx={{
           "@media screen and (max-width: 768px)": {
             textAlign: "center",
-            marginTop: "4rem",
+            margin: "4rem auto",
           },
         }}
       >
@@ -90,7 +92,7 @@ const Result = () => {
           {parsingFloat(form.inputDolar * global.cotation)}
         </Text>
       </Box>
-    </>
+    </div>
   );
 };
 export default Result;

@@ -13,6 +13,7 @@ const StandardButton = ({ clickEvent, text, primary }) => {
     <Button
       my={3}
       primary={primary}
+      mx={5}
       p={3}
       width={1 / 8}
       bg={primary ? "var(--green)" : "var(--white)"}

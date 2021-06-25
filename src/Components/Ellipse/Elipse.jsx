@@ -14,8 +14,8 @@ const Elipse = () => {
         alt=""
         sx={{
           width: "25%",
-          top: "32%",
-          left: "860px",
+          top: "18%",
+          left: "58%",
           position: "absolute",
           opacity: "0.8",
           "@media screen and (max-width: 768px)": {
