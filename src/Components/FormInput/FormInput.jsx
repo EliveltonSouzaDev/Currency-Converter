@@ -14,7 +14,7 @@ const FormInput = () => {
     <Box
       as="form"
       py={3}
-      mt={4}
+      mt="6rem"
       mx={5}
       sx={{
         "@media screen and (max-width: 768px)": {
@@ -38,7 +38,7 @@ const FormInput = () => {
         {/* inputs de texto */}
 
         <Box
-          width={1 / 6}
+          width="9.5rem"
           px={2}
           sx={{
             "@media screen and (max-width: 768px)": {
@@ -68,7 +68,7 @@ const FormInput = () => {
           ></Input>
         </Box>
         <Box
-          width={[1 / 6]}
+          width="9.5rem"
           px={2}
           sx={{
             "@media screen and (max-width: 768px)": {

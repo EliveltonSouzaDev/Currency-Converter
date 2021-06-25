@@ -23,6 +23,7 @@ body {
 
 div {
   width: 100%;
+  overflow: hidden;
 }
 
 @media (max-width: 768px) {

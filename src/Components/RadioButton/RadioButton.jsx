@@ -60,8 +60,7 @@ const RadioButton = ({ textFirst, textSecond }) => {
         <Label
           display="flex"
           alignItems="center"
-          justifyContent="center"
-          width={[1 / 12]}
+          width="6.5rem"
           p={2}
           sx={{
             "@media screen and (max-width: 768px)": {
@@ -81,7 +80,9 @@ const RadioButton = ({ textFirst, textSecond }) => {
           {textFirst}
         </Label>
         <Label
-          width={[1 / 14]}
+          display="flex"
+          alignItems="center"
+          width="5.8rem"
           p={2}
           sx={{
             "@media screen and (max-width: 768px)": {

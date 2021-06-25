@@ -14,12 +14,12 @@ export const Container = styled.section`
     border-color: var(--green) transparent var(--green) transparent;
     border-radius: 50%;
     animation: spin 1.2s linear infinite;
-    margin-right: 7rem;
+    margin-right: 3rem;
   }
   img {
     width: 20%;
     margin-bottom: 5px;
-    margin-right: 7rem;
+    margin-right: 3rem;
   }
   @keyframes spin {
     0% {

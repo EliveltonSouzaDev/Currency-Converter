@@ -13,7 +13,7 @@ import { Box, Flex, Heading, Image, Text } from "rebass";
 const Header = () => {
   return (
     <Flex
-      mt={5}
+      mt="5rem"
       mx={5}
       alignItems="center"
       sx={{
@@ -28,7 +28,7 @@ const Header = () => {
         className="logo"
         src={Logo}
         alt="logo verde Stone currency"
-        width="20%"
+        width="13%"
         sx={{
           "@media screen and (max-width: 768px)": {
             width: "50%",

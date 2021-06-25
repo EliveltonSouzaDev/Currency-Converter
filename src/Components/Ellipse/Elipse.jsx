@@ -14,7 +14,7 @@ const Elipse = () => {
         alt=""
         sx={{
           width: "25%",
-          top: "18%",
+          top: "22%",
           left: "58%",
           position: "absolute",
           opacity: "0.8",

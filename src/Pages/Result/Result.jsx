@@ -22,7 +22,7 @@ const Result = () => {
   };
 
   return (
-    <div>
+    <Box mt="6rem">
       <Link to="/">
         <StandardButton clickEvent={clearInput} text={"Voltar"} />
       </Link>
@@ -92,7 +92,7 @@ const Result = () => {
           {parsingFloat(form.inputDolar * global.cotation)}
         </Text>
       </Box>
-    </div>
+    </Box>
   );
 };
 export default Result;

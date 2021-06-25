@@ -15,7 +15,7 @@ const StandardButton = ({ clickEvent, text, primary }) => {
       primary={primary}
       mx={5}
       p={3}
-      width={1 / 8}
+      width="10rem"
       bg={primary ? "var(--green)" : "var(--white)"}
       color={primary ? "var(--white)" : "var(--lightgray)"}
       onClick={clickEvent}
@@ -45,10 +45,10 @@ const StandardButton = ({ clickEvent, text, primary }) => {
         }}
       >
         {" "}
-        <IconContext.Provider value={{ size: "1.3rem" }}>
+        <IconContext.Provider value={{ size: "1.5rem" }}>
           {primary ? <FaExchangeAlt /> : <FiArrowLeft />}
         </IconContext.Provider>
-        <Text color={primary ? "white" : "black"} fontWeight="bold">
+        <Text color={primary ? "white" : "black"} mx={2} fontWeight="bold">
           {text}
         </Text>
       </Flex>
