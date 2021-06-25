@@ -5,7 +5,7 @@ import { FormContext } from "../../Contexts/GlobalForm";
 import { GlobalContext } from "../../Contexts/GlobalStorage";
 
 //rebass
-import { Text, Flex } from "rebass";
+import { Text, Flex, Box } from "rebass";
 import { Label, Radio } from "@rebass/forms";
 
 const RadioButton = ({ textFirst, textSecond }) => {
@@ -24,7 +24,15 @@ const RadioButton = ({ textFirst, textSecond }) => {
   };
 
   return (
-    <>
+    <Box
+      mx={5}
+      sx={{
+        "@media screen and (max-width: 768px)": {
+          margin: "0 auto",
+          width: "100%",
+        },
+      }}
+    >
       <Text
         fontWeight="bold"
         my="2"
@@ -50,7 +58,10 @@ const RadioButton = ({ textFirst, textSecond }) => {
         }}
       >
         <Label
-          width={[1 / 11]}
+          display="flex"
+          alignItems="center"
+          justifyContent="center"
+          width={[1 / 12]}
           p={2}
           sx={{
             "@media screen and (max-width: 768px)": {
@@ -70,7 +81,7 @@ const RadioButton = ({ textFirst, textSecond }) => {
           {textFirst}
         </Label>
         <Label
-          width={[1 / 2]}
+          width={[1 / 14]}
           p={2}
           sx={{
             "@media screen and (max-width: 768px)": {
@@ -90,7 +101,7 @@ const RadioButton = ({ textFirst, textSecond }) => {
           {textSecond}
         </Label>
       </Flex>
-    </>
+    </Box>
   );
 };
 

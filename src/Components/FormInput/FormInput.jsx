@@ -15,10 +15,12 @@ const FormInput = () => {
       as="form"
       py={3}
       mt={4}
+      mx={5}
       sx={{
         "@media screen and (max-width: 768px)": {
-          marginTop: "0",
+          margin: "1rem auto",
           alignItems: "center",
+          width: "100%",
         },
       }}
     >
