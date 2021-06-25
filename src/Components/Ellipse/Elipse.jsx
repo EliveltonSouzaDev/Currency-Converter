@@ -13,9 +13,9 @@ const Elipse = () => {
         src={ElipseImg}
         alt=""
         sx={{
-          width: "25%",
-          top: "22%",
-          left: "58%",
+          width: "20%",
+          top: "25%",
+          left: "60%",
           position: "absolute",
           opacity: "0.8",
           "@media screen and (max-width: 768px)": {
